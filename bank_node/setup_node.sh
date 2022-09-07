@@ -26,7 +26,7 @@ port=`sudo grep default-rpc-port ~/.multichain/chain1/params.dat | grep -oP '[0-
 networkport=`sudo grep default-network-port ~/.multichain/chain1/params.dat | grep -oP '[0-9]{4}'`
 password=`sudo grep rpcpassword  ~/.multichain/chain1/multichain.conf | cut -d'=' -f2`
 ml_host=$1
-cat >~/CreditSense/bank_node/API/credentials.json <<EOF
+cat >~/GHOSustainable/bank_node/API/credentials.json <<EOF
     {
       "ml_host": "${ml_host%%:*}",
       "rpcuser": "multichainrpc",
@@ -51,6 +51,6 @@ python3 app.py $address &
 echo '10. Starting frontend...'
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
-cd ~/CreditSense/frontend
+cd ~/GHOSustainable/frontend
 npm install
 sudo npm start &
