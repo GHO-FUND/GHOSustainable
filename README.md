@@ -1,4 +1,4 @@
-# Credit Sense
+# GHO Sustainable!
 
  <img src="/images/cs.png" width="150" align= "center"/>
 
