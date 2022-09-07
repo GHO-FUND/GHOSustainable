@@ -29,7 +29,7 @@ echo '7. Setting up local credentials for multichain...'
 port=`sudo grep default-rpc-port ~/.multichain/chain1/params.dat | grep -oP '[0-9]{4}'`
 networkport=`sudo grep default-network-port ~/.multichain/chain1/params.dat | grep -oP '[0-9]{4}'`
 password=`sudo grep rpcpassword  ~/.multichain/chain1/multichain.conf | cut -d'=' -f2`
-cat >~/CreditSense/bank_node/API/credentials.json <<EOF
+cat >~/GHOSustainable/bank_node/API/credentials.json <<EOF
     {
       "rpcuser": "multichainrpc",
       "rpcpasswd": "$password",
@@ -49,5 +49,5 @@ multichain-cli chain1 create stream strm1 true
 echo "Connect to $nodeaddress from other nodes"
 sudo sed -i 's/Savoir.Savoir/Savoir/g' /usr/local/lib/python2.7/dist-packages/Savoir/__init__.py
 echo '9. Starting flask server...'
-cd ~/CreditSense/bank_node/API
+cd ~/GHOSustainable/bank_node/API
 python mlapi.py &
