@@ -22,7 +22,7 @@ A flow chart describing the overall application is as follows:
 
 # System Technicalities
 
-We have a deployable prototype of our solution already running. We are also serving the community at this address: https://t.me/emsaction.
+We have a deployable prototype of our solution already running. We are also serving the community at [this address](https://t.me/emsaction).
 
 The solution has 4 layers which includes:
 
